@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your perfect trip by booking flights, hotels, and activities all in one place.">
+    <title>Plan a Trip - Travel Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #007BFF; /* Blue header */
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Space between links */
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s; /* Transition for hover effect */
+        }
+
+        .nav-links li a:hover {
+            color: #ddd; /* Change color on hover */
+        }
+
+        /* Trip Planning Section */
+        .trip-planner {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white; /* White background for the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        h1 {
+            text-align: center;
+            color: #333; /* Darker heading color */
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold; /* Bold labels */
+            color: #555; /* Slightly darker color for labels */
+        }
+
+        input, select, textarea {
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px; /* Rounded input fields */
+            font-size: 16px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #007BFF; /* Blue border on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        button {
+            padding: 12px;
+            background-color: #007BFF; /* Blue button background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transition for hover effect */
+            width: 100%; /* Full width button */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007BFF; /* Blue footer */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Travel Planner</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">My Itineraries</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Trip Planning Form -->
+    <section class="trip-planner">
+        <h1>Plan Your Trip</h1>
+        <form id="trip-form" action="plan_trip.php" method="POST">
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="flight-class">Flight Class:</label>
+                <select id="flight-class" name="flight_class">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First Class</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hotel">Hotel Preferences:</label>
+                <input type="text" id="hotel" name="hotel">
+            </div>
+
+            <div class="form-group">
+                <label for="activities">Activities:</label>
+                <textarea id="activities" name="activities" rows="4" placeholder="List activities you'd like to do..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Find Flights & Hotels</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Travel Planner. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="search.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>
+

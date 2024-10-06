@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage your travel itineraries on the Travel Itinerary Planner.">
+    <title>My Profile - Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Travel Planner</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plan.html">Plan a Trip</a></li>
+                <li><a href="profile.html" class="active">My Itineraries</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="profile-info">
+            <h1>Welcome, [Username]</h1>
+            <p>Email: user@example.com</p>
+            <button class="btn btn-theme-toggle">Switch Theme</button>
+        </div>
+    </section>
+
+    <!-- Itineraries Section -->
+    <section class="itineraries">
+        <h2>Your Trips</h2>
+
+        <!-- Sample Itinerary Card -->
+        <div class="itinerary-card">
+            <h3>Trip to Paris</h3>
+            <p>Dates: 12th Nov 2024 - 18th Nov 2024</p>
+            <p>Flight: Economy - Airline X</p>
+            <p>Hotel: Le Parisien Hotel</p>
+            <p>Activities: Eiffel Tower, Louvre Museum</p>
+            <button class="btn">Edit</button>
+            <button class="btn btn-danger">Cancel Trip</button>
+        </div>
+
+        <!-- Add more itinerary cards dynamically via JavaScript -->
+
+        <div class="no-itineraries">
+            <p>You haven't planned any trips yet.</p>
+            <a href="plan.html" class="btn">Plan a Trip</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Travel Planner. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links .active {
+    color: #ffa500;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e69500;
+}
+
+/* Profile Section */
+.profile {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.profile-info h1 {
+    margin-bottom: 10px;
+}
+
+/* Itinerary Section */
+.itineraries {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.itinerary-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.itinerary-card h3 {
+    margin: 0 0 10px;
+}
+
+.no-itineraries {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}

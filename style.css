@@ -1,0 +1,324 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.feature i:hover {
+    color: #ffdd57; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    transition: all 0.3s ease;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF; /* Distinct color for the header */
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex; /* Use flexbox for a single row */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Vertically center items */
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex; /* Use flexbox for the links */
+    gap: 30px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Change link color to white */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffdd57; /* Hover color */
+}
+/* Main Styles */
+body {
+    background-color: #f0f4f7; /* Light background color */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333; /* Dark color for the main heading */
+}
+
+.button {
+    background-color: #ffdd57; /* Button color */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #333; /* Dark text for button */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f8c51f; /* Darker yellow on hover */
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF; /* Change this to a distinct color */
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+header nav {
+    display: flex; /* Aligns the items in a single row */
+    justify-content: flex-end; /* Aligns the nav items to the right */
+    gap: 25px; /* Space between each link */
+}
+
+header nav a {
+    color: white; /* Change link color to white for better contrast */
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffdd57; /* Hover color for better interaction */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero-content {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?mountain') no-repeat center center/cover;
+}
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    background-color: #ffdd57;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #f5b935;
+    transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+section .btn {
+    background-color: #ffdd57;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section .btn:hover {
+    background-color: #f5b935;
+    transform: translateY(-5px);
+}
+/* Scroll-to-Top Button Styles */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: none; /* Hidden by default */
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+.scroll-to-top i {
+    font-size: 18px;
+}
+
+/* Show the button when scrolling down */
+body.scrolled .scroll-to-top {
+    display: block;
+}
+
+/* Feature Icons */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 50px;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #777;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffdd57;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 15px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}

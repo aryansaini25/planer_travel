@@ -1,0 +1,35 @@
+/* Light Theme (Default) */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+}
+
+.btn-theme-toggle {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Dark Theme (When toggled) */
+body.dark-mode {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+header.dark-mode {
+    background-color: #444;
+}
+
+.itinerary-card.dark-mode {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+}
+
+.btn-theme-toggle.dark-mode {
+    background-color: #ffa500;
+    color: #333;
+}

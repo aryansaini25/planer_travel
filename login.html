@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your Travel Itinerary Planner account to manage your trips.">
+    <title>Login - Travel Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #007BFF; /* Blue header */
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Space between links */
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s; /* Transition for hover effect */
+        }
+
+        .nav-links li a:hover {
+            color: #ddd; /* Change color on hover */
+        }
+
+        /* Login Form Section */
+        .login-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white; /* White background for the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        h1 {
+            text-align: center;
+            color: #333; /* Darker heading color */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold; /* Bold labels */
+            color: #555; /* Slightly darker color for labels */
+        }
+
+        input {
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px; /* Rounded input fields */
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #007BFF; /* Blue border on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        button {
+            padding: 12px;
+            background-color: #007BFF; /* Blue button background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transition for hover effect */
+            width: 100%; /* Full width button */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007BFF; /* Blue footer */
+            color: white;
+        }
+
+        /* Link Style */
+        p {
+            text-align: center; /* Center-align the paragraph */
+        }
+
+        a {
+            color: #007BFF; /* Blue link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Travel Planner</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <section class="login-form">
+        <h1>Login to Your Account</h1>
+        <form action="login.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+            <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Travel Planner. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

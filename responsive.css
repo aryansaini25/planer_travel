@@ -1,0 +1,25 @@
+/* Mobile styles (for devices with max width of 768px) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile, .itineraries {
+        padding: 1rem;
+    }
+
+    .itinerary-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}

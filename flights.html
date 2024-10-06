@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best deals on flights for your travel with Travel Itinerary Planner. Book flights from leading airlines.">
+    <meta name="keywords" content="flights, booking, travel, airlines, deals, tickets">
+    <title>Flights - Travel Planner</title>
+
+    <!-- CSS Styles -->
+    <style>
+        
+    /* Styles for Available Flights Section */
+    .available-flights {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .available-flights h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease-out;
+    }
+
+    .available-flights p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        animation: fadeInUp 1s ease-out;
+    }
+
+    .available-flights a.btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #ff5722;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        transition: all 0.3s ease;
+        animation: fadeIn 1.2s ease-out;
+    }
+
+    .available-flights a.btn:hover {
+        background-color: #e64a19;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+    }
+
+    .available-flights a.btn:active {
+        transform: translateY(0px);
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            height: 60vh;
+            background-image: url('images/flights.jpg'); /* Change to the actual image path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="activities.html">Activities</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Book Your Flights</h1>
+            <p>Get the best deals on flights from leading airlines around the world.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Find the Perfect Flights</h2>
+        <p>We help you compare prices and find the best flights for your trip. Whether you're flying for business or leisure, our platform offers a wide range of options from various airlines to suit your schedule and budget.</p>
+    </div>
+    <div class="available-flights">
+        <h2>Available Flights</h2>
+        <p>Find the best deals for flights.</p>
+        <a href="https://www.google.com/flights" target="_blank" class="btn">Check Flights on  Flights</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Travel Planner. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
